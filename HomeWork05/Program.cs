@@ -49,6 +49,6 @@ class Program1
     
     private static void Sensor_MeasurementUpdated(double averageMeasurement)
     {
-        Console.WriteLine($"Average measurement: {averageMeasurement:F2}");
+        Console.WriteLine($"Average measurement: {averageMeasurement}");
     }
 }
