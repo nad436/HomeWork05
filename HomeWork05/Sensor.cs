@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 namespace HomeWork05
 {
 }
-public class Program0 { }
 
 public delegate void MeasurementUpdatedEventHandler(double averageMeasurement);
 public class Sensor
@@ -29,7 +28,7 @@ public class Sensor
         MeasurementUpdated?.Invoke(averageMeasurement);
     }
 }
-class Program1
+class Program0
 {
     static void Main(string[] args)
     {
