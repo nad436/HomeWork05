@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace HomeWork05
 {
-    internal class Lambda
+    public class Lambda
     {
-        static void Main(string[] args)
+       public static void LambdaExpression(List<int> numbers)
         {
-            var numbers = new List<int>() { 23, 34, 12, 69, 2, 33, 93, 45, 89 };
+           
             Console.Write("List:");
             foreach (int i in numbers)
             {

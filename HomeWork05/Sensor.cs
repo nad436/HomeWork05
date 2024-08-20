@@ -28,26 +28,3 @@ public class Sensor
         MeasurementUpdated?.Invoke(averageMeasurement);
     }
 }
-class Program0
-{
-    static void Main(string[] args)
-    {
-       
-        Sensor sensor = new Sensor();
-
-        sensor.MeasurementUpdated += Sensor_MeasurementUpdated;
-
-       
-        sensor.AddMeasurement(10.0, m => m > 0); 
-        sensor.AddMeasurement(20.0, m => m > 0); 
-        sensor.AddMeasurement(-5.0, m => m > 0); 
-        sensor.AddMeasurement(30.0, m => m > 0); 
-        sensor.AddMeasurement(40.0, m => m > 0); 
-    }
-
-    
-    private static void Sensor_MeasurementUpdated(double averageMeasurement)
-    {
-        Console.WriteLine($"Average measurement: {averageMeasurement}");
-    }
-}

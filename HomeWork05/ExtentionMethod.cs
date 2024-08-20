@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace HomeWork05
 {
     public static class ExtentionMethod
     {
+
         public static int Average(List<int> numbers)
         {
             int j = 0;
@@ -14,6 +16,7 @@ namespace HomeWork05
                 n++;
             }
             return j / n;
+         
         }
     }
 }
